@@ -27,16 +27,16 @@ I build simulation models and data-driven tools for mechanical and thermal syste
 
 | Project | What it is | Stack |
 |---|---|---|
-| **Uber cab demand forecasting** | Spatio-temporal demand prediction on NYC taxi data: 30 pickup regions, lag and EWMA features, DVC + MLflow pipeline, Streamlit + Docker app | Python, Dask, scikit-learn, MLflow, DVC, Streamlit, Docker |
-| **Casting defect detection (CNN)** | CNN on ultrasonic phased-array images, 1500+ images, ~98.6% accuracy in production-simulated testing | Python, CNN |
-| **Shape-memory alloy surrogate model** | Rayleigh-Ritz 1D model plus ANSYS (Auricchio) simulation of Nitinol, with a Random Forest surrogate (R² > 0.99) | Python, scikit-learn, ANSYS |
-| **Beam frequency optimisation** | Custom Hermite-cubic Euler-Bernoulli FEM solver, SLSQP shape optimisation, +11% fundamental frequency at constant mass | Python, NumPy, SciPy |
-| **Scramjet thermal choking simulator** | Coupled Fanno-Rayleigh 1D compressible flow solver, Mach 2.5 combustor sweeps | MATLAB |
-| **Helical-coil turbulent flow study** | k-ε model comparison, <4% error vs. published data, empirical correlation | ANSYS Fluent |
-| **VIV energy harvesting model** | Coupled wake-body reduced-order model for flow-induced oscillation | MATLAB / Python |
-| **Motorcycle helmet FEA** | Static and dynamic ANSYS analysis of ABS, polycarbonate and polystyrene helmets (<7% error) | Fusion 360, ANSYS |
-| 🆕 [**battery-thermal-lumped-model**](https://github.com/MECHINAV/battery-thermal-lumped-model) | Lumped thermal model of a Li-ion cell across Indian ambient temperatures (4–45 °C) | Python, SciPy |
-| 🆕 [**helical-coil-flow-correlations**](https://github.com/MECHINAV/helical-coil-flow-correlations) | Friction-factor correlations for helical coils (Ito) vs. straight pipe, with validity checks | Python, NumPy |
+| [**Scramjet thermal choking solver**](https://github.com/MECHINAV/scramjet-thermal-choking-solver) | Generalized 1D solver for simultaneous friction and heat addition (Fanno + Rayleigh). Reproduces exact choking lengths (36.333 m, 57.888 m) and finds the critical heat release for a Mach 2.5 combustor | Python, SciPy, MATLAB |
+| [**Beam frequency optimization**](https://github.com/MECHINAV/beam-frequency-optimization) | Custom Hermite-cubic FEM solver, validated against closed-form results; SLSQP shape optimisation raises f₁ by 11% at equal mass | Python, NumPy, SciPy |
+| [**Battery thermal lumped model**](https://github.com/MECHINAV/battery-thermal-lumped-model) | Li-ion cell thermal model across Indian ambient temperatures (4–45 °C), natural vs forced-air cooling | Python, SciPy |
+| [**Helical-coil flow correlations**](https://github.com/MECHINAV/helical-coil-flow-correlations) | Ito friction-factor correlations for helical coils vs straight pipe, with validity checks | Python, NumPy |
+| [**SMA actuation surrogate**](https://github.com/MECHINAV/cae-ml-case-studies/tree/main/sma-surrogate) | Nitinol shape-memory modelling: Rayleigh-Ritz, ANSYS (Auricchio) simulation, Random Forest surrogate (R² 0.996 on a random hold-out) | ANSYS, Python, scikit-learn |
+| [**Helical-coil CFD validation**](https://github.com/MECHINAV/cae-ml-case-studies/tree/main/helical-coil-cfd) | Fluent reproduction of a published helical-coil study, within 7% on friction factor and pressure drop | ANSYS Fluent |
+| [**VIV energy harvesting model**](https://github.com/MECHINAV/cae-ml-case-studies/tree/main/viv-energy-harvesting) | Replication and validation of a published reduced-order / analytical VIV harvester model | MATLAB, Python |
+| [**Motorcycle helmet FEA**](https://github.com/MECHINAV/cae-ml-case-studies/tree/main/helmet-fea) | BIS-standard helmet, static and dynamic ANSYS analysis of ABS, PC and PS (within 10% of the literature) | Fusion 360, ANSYS |
+| [**Taxi demand forecasting pipeline**](https://github.com/MECHINAV/cae-ml-case-studies/tree/main/uber-demand-forecasting) | NYC taxi demand by region: Dask, MiniBatchKMeans regions, lag features, DVC + MLflow, Streamlit + Docker | Python, scikit-learn, DVC, MLflow |
+| **Casting defect detection (CNN)** | CNN on ultrasonic phased-array images for defect detection in castings | Python |
 
 ## 🛠️ Skills
 
